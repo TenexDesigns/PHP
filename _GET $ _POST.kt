@@ -13,7 +13,7 @@ $_GET , $_POST - Are special variables used to collectdata from an HTML form dat
           Better for a search page
 
 $_POST - Data is packaged inside the body of the http request
-         More secure
+         More secure - Since data sent is not appended to the url
          Cannot bookmark
          GET requests are not cached
          Better for submitting credentials.
@@ -22,6 +22,9 @@ $_POST - Data is packaged inside the body of the http request
 
 
 THIS IS WHERE WE USE THE GET METHOD
+It is Not secure - Since what ever information is sent to the php file is appeneded tot he url
+e.g http://localhost/website/index.php?username=Eliud&password=Kamau
+
 
 <!DOCTYPE html>
 <body>
@@ -54,6 +57,9 @@ echo "{$_GET["password"]} <br>";
 
 
 THIS IS WHERE WE USE THE GET METHOD- Here the sensitive data is not appended to the url.
+ More secure - Since data sent is not appended to the url
+e.g http://localhost/website/index.php
+
 
 
 <!DOCTYPE html>
