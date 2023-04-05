@@ -26,7 +26,7 @@ rand(1,6) - This is used to generate a random numbert between 1 and 2 billion. T
 
 
 
-
+$day = date("l"); ------> Used to return current day. 
 
 
 
