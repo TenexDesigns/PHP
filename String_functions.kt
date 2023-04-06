@@ -45,74 +45,120 @@ There are many more functions available in the PHP string library that can help 
 
 
 
+Certainly! Here are some code examples using the string functions mentioned in my previous response:
 
+strlen():
 
+$str = "Hello world!";
+$length = strlen($str); // $length is now 12
 
 
+strpos():
 
+$str = "Hello world!";
+$position = strpos($str, "world"); // $position is now 6
 
 
 
 
+substr():
 
+$str = "Hello world!";
+$sub = substr($str, 6, 5); // $sub is now "world"
 
 
+strtolower():
 
+$str = "Hello World!";
+$lowercase = strtolower($str); // $lowercase is now "hello world!"
 
 
 
 
+strtoupper():
 
 
+$str = "Hello World!";
+$uppercase = strtoupper($str); // $uppercase is now "HELLO WORLD!"
 
 
 
+trim():
 
+$str = "  Hello World!   ";
+$trimmed = trim($str); // $trimmed is now "Hello World!"
 
 
 
+str_replace():
 
 
+$str = "Hello World!";
+$newStr = str_replace("World", "Universe", $str); // $newStr is now "Hello Universe!"
 
 
 
+str_split():
 
+$str = "Hello World!";
+$arr = str_split($str); // $arr is now ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d", "!"]
 
 
 
 
 
+implode():
 
+$arr = ["Hello", "World", "!"];
+$str = implode(" ", $arr); // $str is now "Hello World !"
 
 
+explode():
 
 
+$str = "Hello World!";
+$arr = explode(" ", $str); // $arr is now ["Hello", "World!"]
 
 
 
+ucfirst():
 
 
+$str = "hello world!";
+$ucfirst = ucfirst($str); // $ucfirst is now "Hello world!"
 
 
 
+ucwords():
 
 
+$str = "hello world!";
+$ucwords = ucwords($str); // $ucwords is now "Hello World!"
 
 
 
+strcmp():
 
 
+$str1 = "hello";
+$str2 = "world";
+$result = strcmp($str1, $str2); // $result is a negative integer (-1) because "hello" is less than "world"
 
 
+strcasecmp():
 
 
+$str1 = "Hello";
+$str2 = "WORLD";
+$result = strcasecmp($str1, $str2); // $result is 0 because "Hello" is the same as "WORLD" when case is ignored
 
 
 
+sprintf():
 
-
-
-
+$name = "John";
+$age = 30;
+$message = sprintf("My name is %s and I am %d years old.", $name, $age); // $message is now "My name is John and I am 30 years old."
 
 
 
